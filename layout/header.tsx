@@ -17,9 +17,9 @@ return (
             <h1 className = "text-2xl font-bold"> Academy of Information Technology & Engineering </h1>
         </div>
         <nav className = "flex space-x-6 text-base font-medium">
-            <a href= "#" className = "hover:text-blue-600">About AITE</a> 
-            <a href= "#" className = "hover:text-blue-600">Link 2</a>
-            <a href= "#" className = "hover:text-blue-600">Link 3</a>
+            <a href= "/ " className = "hover:text-blue-600">Home</a> 
+            <a href= "/about " className = "hover:text-blue-600">About</a>
+            <a href= "#" className = "hover:text-blue-600">Contact Us</a>
         </nav>
         <NavUI />
     </header>
