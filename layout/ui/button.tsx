@@ -6,7 +6,7 @@ import Button from "@mui/material/Button"
 const ButtonUI: React.FC = () => {
     return (
         <div>
-            <Button variant = "outlined">Biomedical Pathway<FaAngleRight /></Button>
+            <Button variant = "outlined">CS Pathway<FaAngleRight /></Button>
         </div>
     )
 }
