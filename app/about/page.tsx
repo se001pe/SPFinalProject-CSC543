@@ -4,17 +4,19 @@ import Image from 'next/image';
 
 const About: React.FC = () => {
 return (
-    <div className = "text-center p-6">
-        <div className = "flex flex-row p-6">
-            <h1 className = "text-4xl font-bold">About AITE Pathways</h1>
-    </div>
+    <div className = "w-full p-6">
+        <div className = "flex flex-row w-full text-center">
+            <h1 className = "text-4xl text-center font-bold">About AITE</h1>
+        </div>
+        <div className = "text-center">
     <Image
         src = "/AITESpring2022-1.jpg"
         alt = "About AITE"
         width = {700}
         height = {500}
     />
-        <div className = "flex flex-row p-6">
+        </div>
+        <div className = "flex flex-row p-6 text-center">
             <h4 className = "text-base">AITE is an interdistrict magnet high school located in Stamford, CT. AITE puts a focus on
             preparing students with 21st century skills through exposure to a technology-rich curriculum. AITE has recently transitioned 
             to a pathway model. The school's four pathways are: biomedical, computer science, digital media and engineering. Each student 
