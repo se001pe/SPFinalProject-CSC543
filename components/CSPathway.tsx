@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import AccordionUI from "@/layout/ui/accordion";
 
 export default function CSPathways() {
 

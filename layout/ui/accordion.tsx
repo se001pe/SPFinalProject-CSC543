@@ -7,7 +7,11 @@ import { MdOutlineArrowCircleUp } from "react-icons/md";
 import { MdOutlineArrowCircleDown } from "react-icons/md";
 import React from 'react';
 
-const AccordionUI: React.FC = () => {
+interface CustomAccordionProps {
+    title: string;
+    content: string | React.ReactNode;
+}
+const AccordionUI = ( { title, content }:  CustomAccordionProps) => {
 return (
 <div>
 <Accordion>
@@ -16,13 +20,10 @@ expandIcon={<MdOutlineArrowCircleDown />}
 aria-controls="panel1-content"
 id="panel1-header"
 >
-<Typography component="span">Accordion 1</Typography>
+<Typography component="span">{title}</Typography>
 </AccordionSummary>
 <AccordionDetails>
-<Typography>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-malesuada lacus ex, sit amet blandit leo lobortis eget.
-</Typography>
+<Typography>{content}</Typography>
 </AccordionDetails>
 </Accordion>
 <Accordion>
