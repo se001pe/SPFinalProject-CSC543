@@ -21,11 +21,12 @@ const Home: React.FC = () => {
 
 return (
     
-    <div className="bg-[url(/100_7739.JPG)]">
+    <div className="relative bg-[url(/100_7739.JPG)] bg-cover bg-center h-150">
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className = "flex flex-row w-full pb-20">
             <HomeHeader />            
         </div>
-        <div className = "flex flex-row w-full align-center pl-70 gap-x-20">
+        <div className = "relative z-10 flex flex-row w-full align-center pl-70 gap-x-20">
             <Link href="pathways/biomed">
                 <WildcardKeyframes>
                     <motion.p
@@ -89,9 +90,9 @@ return (
                  </WildcardKeyframes>
                 </Link>
              </div>
-            <div className = "flex flex-col p=10">
+            {/* <div className = "flex flex-col p=10">
                 <HTMLContent />        
-            </div>
+            </div> */}
      </div>
     );
 };
