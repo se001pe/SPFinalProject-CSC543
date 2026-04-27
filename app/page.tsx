@@ -7,6 +7,7 @@ import HTMLContent from '@/components/count';
 import { MotionConfig } from 'framer-motion';
 import Link from 'next/link';
 import Image from "next/image";
+import Background from "@/layout/ui/background";
 
 const labels = {
     biomed: "Biomedical Science",
@@ -18,6 +19,7 @@ const labels = {
 const Home: React.FC = () => {
 
 return (
+    
     <div>
         <div className = "flex flex-row w-full pb-70">
             <HomeHeader />
