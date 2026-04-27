@@ -47,6 +47,7 @@ if (pathway === "computer-science") {
     <div className = "flex flex-col w-full p-5">
       <div className = "text-center text-xl">Engineering Teachers</div>
          <ul className = "text-base p-5">
+          <VerticalDividers>CENTER</VerticalDividers>
             <p className="font-bold"><li>Ms. Paige Ridley - Pathway Lead</li></p>
             <li>Courses Taught: Engineering Essentials, PLTW Civil Engineering & Architecture, PLTW Capstone</li>
             <Image
@@ -55,10 +56,13 @@ if (pathway === "computer-science") {
               width = {300}
               height = {300}
             />
+            <VerticalDividers>CENTER</VerticalDividers>
             <p className="font-bold"><li>Ms. Pradnya Nandanwar</li></p>
             <li>Courses Taught: PLTW Principles of Engineering</li>
+            <VerticalDividers>CENTER</VerticalDividers>
             <p className="font-bold"><li>Mr. Sean Peterson</li></p>
             <li>Courses Taught: PLTW Introduction to Engineering Design, Digital Electronics</li>
+            <VerticalDividers>CENTER</VerticalDividers>
             <p className="font-bold"><li>Mr. Vin Urbanowski</li></p>
             <li>Courses Taught: Aerospace Engineering, Tango Flight</li>
         </ul>
