@@ -8,6 +8,7 @@ import { MotionConfig } from 'framer-motion';
 import Link from 'next/link';
 import Image from "next/image";
 import Background from "@/layout/ui/background";
+import { ImageError } from 'next/dist/server/image-optimizer';
 
 const labels = {
     biomed: "Biomedical Science",
@@ -20,9 +21,9 @@ const Home: React.FC = () => {
 
 return (
     
-    <div>
-        <div className = "flex flex-row w-full pb-70">
-            <HomeHeader />
+    <div className="bg-[url(/100_7739.JPG)]">
+        <div className = "flex flex-row w-full pb-20">
+            <HomeHeader />            
         </div>
         <div className = "flex flex-row w-full align-center pl-70 gap-x-20">
             <Link href="pathways/biomed">
