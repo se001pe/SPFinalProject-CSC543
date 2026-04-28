@@ -7,7 +7,7 @@ export default function VerticalDividers() {
             sx = {{
                 display: 'flex',
                 alignItems: 'center',
-                border: '1px solid',
+                border: '3px solid',
                 borderColor: 'divider',
                 borderRadius: 1,
                 bgcolor: 'background.paper',
