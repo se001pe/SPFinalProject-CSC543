@@ -29,6 +29,18 @@ return (
         width = {300}
         height = {500}
         />
+        <Image
+        src = "/p.jpeg"
+        alt = "Principal"
+        width = {300}
+        height = {500}
+        />
+        <Image
+        src = "/jess.jpeg"
+        alt = "Assistant Principal Prince"
+        width = {300}
+        height = {500}
+        />
         </div>
        
     </div>

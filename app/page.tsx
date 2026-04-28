@@ -3,11 +3,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import HomeHeader from "@/components/homeheader";
 import WildcardKeyframes from "@/components/motion";
-import HTMLContent from '@/components/count';
 import { MotionConfig } from 'framer-motion';
 import Link from 'next/link';
 import Image from "next/image";
-import Background from "@/layout/ui/background";
 import { ImageError } from 'next/dist/server/image-optimizer';
 
 const labels = {
@@ -70,6 +68,12 @@ return (
                     >
                         {labels["digital-media"]}
                     </motion.p>
+                    <Image 
+                        src = "/dmdicon.png"
+                        alt = "Digital Media"
+                        width = {100}
+                        height={100}
+                    />
                 </WildcardKeyframes>
             </Link>
             <Link href = "pathways/engineering">
