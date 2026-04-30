@@ -19,12 +19,7 @@ export default function ImList() {
 }
 
 const itemData = [
-    {
-        img: 'https://s.hdnux.com/photos/27/63/27/6239692/4/960x0.webp',
-        title: 'Principal',
-    },
-    {
-        img: 'https://patch.com/img/cdn/users/1318183/2013/03/raw/4b1df21f54dd1ccf69ca538e0fb8dede.jpg?width=1200',
+    {   img: 'https://patch.com/img/cdn/users/1318183/2013/03/raw/4b1df21f54dd1ccf69ca538e0fb8dede.jpg?width=1200',
         title: 'School Exterior',
     },
     {   img: '/100_7492.JPG',
@@ -33,7 +28,7 @@ const itemData = [
     {   img: '/100_7508.JPG',
         title: 'Media Center',
     },
-    {   img: '100_7739.JPG',
+    {   img: '/100_7739.JPG',
         title: 'School Logo',
     },
     {   img: '/DSC_0242.JPG',
@@ -48,7 +43,20 @@ const itemData = [
     {   img: '/DSC05509.JPG',
         title: 'Hallways',
     },
-    {   img: '/DSC_0464.JPG',
-        title: 'Hard Hat Ceremony',
+    
+    {   img: '/techexpo1.jpg',
+        title: 'Tech Expo',
+    },
+    {   img: '/techexpo2.jpg',
+        title: 'Tech Expo',
+    },
+    {   img: '/techexpo3.jpg',
+        title: 'Tech Expo',
+    },
+    {   img: '/techexpo4.jpg',
+        title: 'Tech Expo',
+    },
+    {   img: '/techexpo5.jpg',
+        title: 'Tech Expo',
     },
 ]

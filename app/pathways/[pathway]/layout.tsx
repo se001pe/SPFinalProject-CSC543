@@ -6,6 +6,7 @@ export default async function PathwayLayout({ children, params }: any) {
   const resolvedParams = await params;
   const pathway = resolvedParams?.pathway ?? "unknown";
 
+
   return (
     <div>
       <div>
@@ -24,6 +25,7 @@ export default async function PathwayLayout({ children, params }: any) {
           <Link className="block" href={`/pathways/${pathway}/courseseq`}>Course Sequence</Link>
           <Link className="block" href={`/pathways/${pathway}/coursedesc`}>Course Descriptions</Link>
           <Link className="block" href={`/pathways/${pathway}/teachers`}>Teachers</Link>
+          <Link className="block" href={`/pathways/${pathway}/projects`}>Student Projects</Link>
         </nav>
       </aside>
 

@@ -1,48 +1,82 @@
 'use client';
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Contact: React.FC = () => {
 
-    //     const [name,setName] = useState("");
-    //     const [message,setMessage] = useState("");
-    //     const [status,setStatus] = useState("");
+        const [form,setForm] = useState({first_name: "", last_name: "", city: "", email: "", message: "" });
+        const [status,setStatus] = useState("");
 
-    //     async function handleSubmit (e: React.FormEvent) {
-    //         e.preventDefault();
+        async function handleSubmit (e: React.FormEvent) {
+            e.preventDefault();
+            setStatus("Sending...");
             
-    //     const res = await fetch("/api/submit-form", {
-    //         method: "POST",
-    //         headers: { "Content-Type" : "application/json"},
-    //         body: JSON.stringify ({ name, message }),
-    //     });
+        const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type" : "application/json"},
+            body: JSON.stringify (form),
+        });
 
-    //     const data = await res.json();
-    //     setStatus(data.status);
-    // };
+        if (res.ok) {
+            setStatus("Message sent!");
+            setForm({first_name: "", last_name: "", city: "", email: "", message: ""});
+        }
+        else {
+            setStatus("Something went wrong");
+        }
+    };
 
     return ( 
 
         <div className = "flex flex-col w-full text-center">
-            <h1 className = "text-xl">Contact Us Form</h1>
-        {/* <form onSubmit = {handleSubmit} style={{ display : "flex",flexDirection:"column",gap="1rem",maxWidth="300px"}}>
+            <h1 className = "text-4xl font-bold">Contact Us Form</h1>
+        <form onSubmit = {handleSubmit} className="space-y=4">
             <input
-                type="text"
-                placeholder="Your Name"
-                value = {name}
-                onChange = {(e) => setName(e.target.value)}
-                style =  {{ padding : "8px" }}
+                className = "w-64 p-2 border rounded"
+                placeholder = "First Name"
+                value = {form.first_name}
+                onChange = {(e) => setForm({ ...form, first_name: e.target.value})}
+                required
              />
-             <textarea placeholder = "Your Message"
-                value = {message}
-                onChange = {(e) => setMessage(e.target.value)}
-                style = {{padding : "8px" }}
+             <input
+                className = "w-64 p-2 border rounded"
+                placeholder = "Last Name"
+                value = {form.last_name}
+                onChange = {(e) => setForm({ ...form, last_name: e.target.value})}
+                required
+             /> 
+             <input
+                className = "w-64 p-2 border rounded"
+                placeholder = "Your Email"
+                type = "email"
+                value = {form.email}
+                onChange = {(e) => setForm({ ...form, email: e.target.value})}
+                required
+             />
+             <input
+                className = "w-64 p-2 border rounded"
+                placeholder = "Your City"
+                type = "city"
+                value = {form.city}
+                onChange = {(e) => setForm({ ...form, city: e.target.value})}
+                required
+            />
+             <textarea 
+                className = "w-full p-2 border rounded"
+                placeholder = "Your Message"
+                rows = {5}
+                value = {form.message}
+                onChange = {(e) => setForm({ ...form, message: e.target.value})}
+                required
              />
 
-           <button type = "submit" style={{ padding: "10px", cursor: "pointer" }}>
+           <button 
+                type = "submit" 
+                className="bg-blue-600 text-white px-4 py-2 rounded"
+            >
               Submit
             </button>
           </form>
-          {status && <p>{status}</p>} */}
+          {status && <p className = "mt-4">{status}</p>}
         </div>
     );
 };

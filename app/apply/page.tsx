@@ -6,8 +6,8 @@ import VerticalDividers from "@/layout/ui/divider";
 export default function Apply() {
     return (
     <div className = "flex flex-col w-full">
-        <div className = "flex flex-col w-full">
-            <h1 className = "text-xl text-center text-strong">Lottery Information</h1>
+        <div className = "flex flex-col w-full text-center">
+            <h1 className = "text-4xl font-bold">Lottery Information</h1>
         </div>
         <VerticalDividers>CENTER</VerticalDividers>
         <div className = "flex flex-col w-full text-base">
