@@ -7,10 +7,10 @@ export default function TurtleRunner() {
   useEffect(() => {
     // This function will run your Python turtle code
     (window as any).runTurtle = function () {
-      const code = `
+const code = `
 import turtle as trtl
 n = 18
-painter.goto(0,0)
+//painter.goto(0,0)
 painter = trtl.Turtle()
 painter.shape("circle")
 painter.penup()
@@ -21,19 +21,6 @@ while n > 0:
   if n % 2 == 0:
     painter.color("red")
   painter.stamp()
-  n -= 1
-// x = 0
-// y = -50
-// painter.goto(x,y)
-// for r in range(6):
-//   painter.color("blue")
-//   for c in range(5):
-//     painter.color("red")
-//     painter.goto(x,y)
-//     painter.stamp()
-//     x += 50
-//   x = -100
-//   y -= 50
   `;
 
       // ⭐ ADD THIS — tells Skulpt where to draw the turtle canvas

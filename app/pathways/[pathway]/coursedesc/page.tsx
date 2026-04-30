@@ -31,6 +31,32 @@ export default async function CourseDescriptions( {params } ) {
         );
     };
 
+    if (pathway === "biomed") {
+        return (
+        <div>
+            <div className = "text-center">
+                <div className = "text-center text-xl p-6">
+                    Biomedical Science Pathway Courses
+                </div>
+            </div>
+            <div>
+                <AccordionUI 
+                    title="Human Body Systems PLTW"
+                    content = "Introduction to Computer Science/CS Essentials is an introductory-level course for students brand new to programming and computer science. In this course, you will learn problem-solving strategies, software design, and the foundations of computer science. You'll do so using the Project STEM programming environment and Project Lead the Way CS Essentials curriculum. There are no prerequisites for this course, although you should have basic familiarity with how to operate a computer and use applications. It's also recommended that you have familiarity with basic algebra principles before starting this course."/>
+                <AccordionUI
+                    title="Prinicples of Biomedical Science PLTW"
+                    content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
+                <AccordionUI
+                    title="Medical Interventions PLTW"
+                    content="AP Computer Science A is an introductory college-level computer science course. Students cultivate their understanding of coding through analyzing, writing, and testing code as they explore concepts like modularity, variables, and control structures." />
+                <AccordionUI
+                    title="PLTW Capstone"
+                    content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
+            </div>
+        </div>
+        );
+    };
+
     if (pathway === "engineering") {
         return (
         <div>
@@ -56,6 +82,7 @@ export default async function CourseDescriptions( {params } ) {
                     title="PLTW Capstone"
                     content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
             </div>
+    
 
         </div>
         );

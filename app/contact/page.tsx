@@ -26,9 +26,11 @@ const Contact: React.FC = () => {
     };
 
     return ( 
-
-        <div className = "flex flex-col w-full text-center">
+        <div className = "flex flex-row">
+        <div className = "flex flex-row w-full text-center">
             <h1 className = "text-4xl font-bold">Contact Us Form</h1>
+        </div>
+        <div className = "flex flex-col w-full text-center"></div>
         <form onSubmit = {handleSubmit} className="space-y=4">
             <input
                 className = "w-64 p-2 border rounded"

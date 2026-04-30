@@ -30,7 +30,7 @@ return (
         height = {500}
         />
         <Image
-        src = "/p.jpeg"
+        src = "/joecozza.jpg"
         alt = "Principal"
         width = {300}
         height = {500}

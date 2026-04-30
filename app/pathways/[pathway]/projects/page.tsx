@@ -7,7 +7,7 @@ export default async function StudentProjects({ params }) {
   if (pathway === "computer-science") {
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">Python Turtle Demo</h1>
+      <h1 className="text-3xl font-bold mb-6">Example Projects</h1>
       <TurtleRunner />
     </div>
   );
