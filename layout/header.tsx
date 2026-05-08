@@ -16,7 +16,7 @@ const Header: React.FC = () => {
             alt="AITE Logo"
             width={175}
             height={140}
-            className="object-contain"
+            className="h-auto rounded-lg object-contain"
           />
 
           <div className="leading-tight">
@@ -27,23 +27,23 @@ const Header: React.FC = () => {
         </div>
 
         {/* Navigation */}
-          <ul className = "flex flex-row gap-4 p-30">
-            <li>
-              <Link href = "/ " className="hover:text-blue-700 transition">Home</Link>
-            </li>
-            <li>
-              <Link href="/about " className="hover:text-blue-700 transition">About</Link>
-            </li>
-            <li>
-              <Link href="/contact " className="hover:text-blue-700 transition">Contact</Link>
-            </li>
-            <li>
-              <Link href="/apply " className="hover:text-blue-700 transition">Apply</Link>
-            </li>
-            <li>
-              <Link href="/photos " className="hover:text-blue-700 transition">Photos</Link>
-            </li>
-         </ul>
+            <ul className = "flex flex-col sm:flex-row gap-4 p-4">
+              <li>
+                <Link href = "/ " className="hover:text-blue-700 transition">Home</Link>
+              </li>
+              <li>
+                <Link href="/about " className="hover:text-blue-700 transition">About</Link>
+              </li>
+              <li>
+                <Link href="/contact " className="hover:text-blue-700 transition">Contact</Link>
+              </li>
+              <li>
+                <Link href="/apply " className="hover:text-blue-700 transition">Apply</Link>
+              </li>
+              <li>
+                <Link href="/photos " className="hover:text-blue-700 transition">Photos</Link>
+              </li>
+            </ul>
 
       </div>
     </header>

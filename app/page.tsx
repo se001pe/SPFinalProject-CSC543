@@ -17,14 +17,13 @@ const labels = {
 
 const Home: React.FC = () => {
 
-return (
-    
+return (    
     <div className="relative bg-[url(/100_7739.JPG)] bg-cover bg-center h-150">
         <div className="absolute inset-0 bg-black/40"></div>
-        <div className = "flex flex-row w-full pb-20">
-            <HomeHeader />            
-        </div>
-        <div className = "relative z-10 flex flex-row w-full align-center pl-70 gap-x-20">
+            <div className = "flex flex-row w-full pb-20">
+                <HomeHeader />            
+            </div>        
+        <div className = "relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 p-9">
             <Link href="pathways/biomed">
                 <WildcardKeyframes>
                     <motion.p
@@ -32,7 +31,7 @@ return (
                         whileHover={{y: [-5, 0, -5]}}
                         transition={{duration: 0.6, repeat:Infinity}}
                     >
-                        {labels.biomed}
+                    {labels.biomed}
                     </motion.p>
                     <Image 
                         src = "/biomedicon.png"
@@ -42,38 +41,38 @@ return (
                     />
                 </WildcardKeyframes>
             </Link>
-                <Link href="pathways/computer-science">
-                    <WildcardKeyframes>
-                    <motion.p
-                        style={{ color: "gold",fontSize: 18}}
-                        whileHover={{y: [-5, 0, -5]}}
-                        transition={{duration: 0.6, repeat:Infinity}}
-                    >
-                        {labels["computer-science"]}
-                    </motion.p>
-                    <Image 
-                        src = "/csicon.png"
-                        alt = "PLTW Biomedical"
-                        width = {100}
-                        height={100}
-                    />
+            <Link href="pathways/computer-science">
+                <WildcardKeyframes>
+                <motion.p
+                    style={{ color: "gold",fontSize: 18}}
+                    whileHover={{y: [-5, 0, -5]}}
+                    transition={{duration: 0.6, repeat:Infinity}}
+                >
+                    {labels["computer-science"]}
+                </motion.p>
+                <Image 
+                    src = "/csicon.png"
+                    alt = "PLTW Biomedical"
+                    width = {100}
+                    height={100}
+                />
                 </WildcardKeyframes>
              </Link>
-                <Link href="pathways/digital-media">
-                    <WildcardKeyframes>
-                    <motion.p
-                        style={{ color: "gold",fontSize: 18,textAlign:"center"}}
-                        whileHover={{y: [-5, 0, -5]}}
-                        transition={{duration: 0.6, repeat:Infinity}}
-                    >
-                        {labels["digital-media"]}
-                    </motion.p>
-                    <Image 
-                        src = "/dmdicon.png"
-                        alt = "Digital Media"
-                        width = {100}
-                        height={100}
-                    />
+            <Link href="pathways/digital-media">
+                <WildcardKeyframes>
+                <motion.p
+                    style={{ color: "gold",fontSize: 18,textAlign:"center"}}
+                    whileHover={{y: [-5, 0, -5]}}
+                    transition={{duration: 0.6, repeat:Infinity}}
+                >
+                    {labels["digital-media"]}
+                </motion.p>
+                <Image 
+                    src = "/dmdicon.png"
+                    alt = "Digital Media"
+                    width = {100}
+                    height={100}
+                />
                 </WildcardKeyframes>
             </Link>
             <Link href = "pathways/engineering">
@@ -92,11 +91,8 @@ return (
                         height={100}
                     />
                  </WildcardKeyframes>
-                </Link>
-             </div>
-            {/* <div className = "flex flex-col p=10">
-                <HTMLContent />        
-            </div> */}
+            </Link>
+        </div>
      </div>
     );
 };

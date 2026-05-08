@@ -15,7 +15,7 @@ export default async function PathwayLayout({ children, params }: any) {
     <div className="flex min-h-screen">
 
       {/* Pathway Aside */}
-      <aside className="w-64 bg-gray-100 p-6 border-r">
+      <aside className="hidden md:block w-64 bg-gray-100 p-6 border-r">
         <h2 className="text-xl font-semibold mb-4 capitalize">
           {pathway === "unknown" ? "Pathway" : pathway.replace("-", " ")}
         </h2>

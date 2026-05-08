@@ -3,7 +3,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 export default function ImList() { 
     return (
-    <ImageList sx = {{ width:1000, height:1000}} cols={4} rowHeight={200}>
+    <ImageList sx = {{ width:1200, height:1000}} cols={5} rowHeight={200}>
             {itemData.map((item) => ( 
                 <ImageListItem key = {item.img}>
                     <img

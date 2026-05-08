@@ -7,7 +7,7 @@ export default async function CourseDescriptions( {params } ) {
 
     if (pathway === "computer-science") {
         return (
-        <div>
+        <div className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className = "text-center">
                 <div className = "text-center text-xl p-6">
                     Computer Science Pathway Courses
@@ -33,7 +33,7 @@ export default async function CourseDescriptions( {params } ) {
 
     if (pathway === "biomed") {
         return (
-        <div>
+        <div className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className = "text-center">
                 <div className = "text-center text-xl p-6">
                     Biomedical Science Pathway Courses
@@ -59,7 +59,7 @@ export default async function CourseDescriptions( {params } ) {
 
     if (pathway === "engineering") {
         return (
-        <div>
+        <div className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className = "text-center">
                 <div className = "text-center text-xl p-6">
                     Engineering Pathway Courses

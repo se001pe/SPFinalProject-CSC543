@@ -6,7 +6,7 @@ const { pathway } = await params;
 
 if (pathway === "biomed") {
     return (
-    <div className = "flex flex-col w-fullp-5">
+    <div className = "flex flex-col w-full p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <h1 className = "text-xl text-center"> Biomedical Teachers</h1>
          <ul className = "text-base p-5">
           <VerticalDividers>CENTER</VerticalDividers>
@@ -25,7 +25,7 @@ if (pathway === "biomed") {
 
 if (pathway === "computer-science") {
     return (
-    <div className = "flex flex-col w-full p-5">
+    <div className = "flex flex-col w-full p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div className = "text-center text-xl">Computer Science Teachers</div>
          <ul className = "text-base p-5">
           <VerticalDividers>CENTER</VerticalDividers>
@@ -44,7 +44,7 @@ if (pathway === "computer-science") {
 
   if (pathway === "engineering") {
     return (
-    <div className = "flex flex-col w-full p-5">
+    <div className = "flex flex-col w-full p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div className = "text-center text-xl">Engineering Teachers</div>
          <ul className = "text-base p-5">
           <VerticalDividers>CENTER</VerticalDividers>
